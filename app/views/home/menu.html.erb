@@ -1,0 +1,23 @@
+
+<% Section.all.each do |section| %>
+<%=link_to section,home_menu_path(section:section),class:"btn btn-primary" %>
+<%end%>
+<table>
+<th> name</th>
+<th> priceinteger</th>
+<th> description</th>
+<tr>
+<%@i.each do |i|%>
+
+<td><%=i.name%></td>
+<td><%=i.priceinteger%></td>
+<td><%=i.description%></td>
+
+</tr>
+<%end%>
+
+
+
+
+
+
